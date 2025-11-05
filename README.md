@@ -9,9 +9,9 @@ This project demonstrates two connected components:
 
 🧩 Task 1 — Financial Data Analysis
 1. Objective:
-* Clean and preprocess the dataset.
-* Compute financial performance metrics.
-*  Summarize and visualize results.
+-  Clean and preprocess the dataset.
+-  Compute financial performance metrics.
+-  Summarize and visualize results.
 
 ###  Step 1 – Load & inspect data
 ```

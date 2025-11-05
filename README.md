@@ -21,9 +21,9 @@ Step 1 – Load & inspect data
 ```
 
 Step 2 – Data cleaning
-   Remove missing rows in Fiscal Year.
-   Convert revenue, income, assets, liabilities and cash-flow columns to float.
-   Sort by Company and Fiscal Year.
+  • Remove missing rows in Fiscal Year.
+  • Convert revenue, income, assets, liabilities and cash-flow columns to float.
+  • Sort by Company and Fiscal Year.
 
 Step 3 – Feature engineering
    • Revenue Growth (%)          = pct_change() × 100

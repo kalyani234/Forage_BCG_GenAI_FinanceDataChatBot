@@ -13,7 +13,7 @@ This project demonstrates two connected components:
   • Compute financial performance metrics.
   • Summarize and visualize results.
 
-Step 1 – Load & inspect data
+###  Step 1 – Load & inspect data
 ```
    import pandas as pd
    df = pd.read_csv('dataset/companies_financial_data.csv')

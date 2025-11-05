@@ -1,72 +1,55 @@
 # 💹 AI-Powered Financial Data Analysis & Chatbot
 
-# 🧠 Overview
-# ----------------------------------------------------------
-# This project demonstrates two connected components:
-#  1️⃣ Financial data analysis using Python & Pandas.
-#  2️⃣ A simple AI-powered chatbot that responds to predefined
-#     financial questions using the analyzed dataset.
+## 🧠 Overview
 
-# Both tasks were developed and executed in Google Colab.
-
-# ----------------------------------------------------------
-# 📂 Folder / File Structure
-# ----------------------------------------------------------
-financial_chatbot_project/
-├── dataset/
-│   └── companies_financial_data.csv        # Input dataset
-├── task1_data_analysis.ipynb               # Task 1 notebook
-├── task2_chatbot_logic.ipynb               # Task 2 notebook
-└── README.md                               # Documentation
-
-# (Optional for future work)
-# ├── app.py
-# └── templates/index.html                   # Flask front-end
-# ----------------------------------------------------------
+* This project demonstrates two connected components:
+* 1️⃣ Financial data analysis using Python & Pandas.
+* 2️⃣ A simple AI-powered chatbot that responds to predefined
+* financial questions using the analyzed dataset.
 
 
-# 🧩 Task 1 — Financial Data Analysis
-# ----------------------------------------------------------
-# Objective:
+## 🧩 Task 1 — Financial Data Analysis
+1. Objective:
 #   • Clean and preprocess the dataset.
 #   • Compute financial performance metrics.
 #   • Summarize and visualize results.
 
-# Step 1 – Load & inspect data
-#   import pandas as pd
-#   df = pd.read_csv('dataset/companies_financial_data.csv')
-#   df.info()
+### Step 1 – Load & inspect data
+```
+   import pandas as pd
+   df = pd.read_csv('dataset/companies_financial_data.csv')
+   df.info()
+```
 
-# Step 2 – Data cleaning
-#   • Remove missing rows in Fiscal Year.
-#   • Convert revenue, income, assets, liabilities,
-#     and cash-flow columns to float.
-#   • Sort by Company and Fiscal Year.
+###  Step 2 – Data cleaning
+   Remove missing rows in Fiscal Year.
+   Convert revenue, income, assets, liabilities and cash-flow columns to float.
+   Sort by Company and Fiscal Year.
 
-# Step 3 – Feature engineering
+###  Step 3 – Feature engineering
 #   • Revenue Growth (%)          = pct_change() × 100
 #   • Net Income Growth (%)
 #   • Debt Ratio (%)              = Liabilities / Assets × 100
 #   • Cash-Flow-to-Revenue Ratio (%) = CFO / Revenue × 100
 #   • Assets-to-Liabilities Ratio = Assets / Liabilities
 
-# Step 4 – Aggregations
-#   • Group by Company  → sum, mean, max of revenue & income
-#   • Group by Year     → total revenue & income across firms
+###  Step 4 – Aggregations
+  • Group by Company  → sum, mean, max of revenue & income
+  • Group by Year     → total revenue & income across firms
 
-# Step 5 – Visualization
-#   • Grouped bar chart: Total Revenue vs Year for each Company.
-#   • Libraries used: matplotlib and numpy.
+###  Step 5 – Visualization
+  • Grouped bar chart: Total Revenue vs Year for each Company.
+  • Libraries used: matplotlib and numpy.
 
-# Step 6 – Conclusions
-#   • Apple dominates revenue & profit but growth is flattening.
-#   • Microsoft shows consistent balanced performance.
-#   • Tesla shows fastest revenue growth but volatile profit.
-# ----------------------------------------------------------
+###  Step 6 – Conclusions
+  • Apple dominates revenue & profit but growth is flattening.
+  • Microsoft shows consistent balanced performance.
+  • Tesla shows fastest revenue growth but volatile profit.
+----------------------------------------------------------
 
 
 # 🤖 Task 2 — Rule-Based Financial Chatbot
-# ----------------------------------------------------------
+ ----------------------------------------------------------
 # Objective:
 #   Implement a basic chatbot using if-elif statements
 #   to answer predefined queries derived from Task 1 metrics.

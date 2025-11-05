@@ -91,14 +91,14 @@ Objective:
    You: exit
    Chatbot: Goodbye! 👋
 
- * ⚙️ Libraries Required
+###  Libraries Required
 ```
 pip install pandas numpy matplotlib
  (optional)
 pip install flask
 ```
 
-* Summary
+###  Summary
 
 * Task 1 analyzes financial trends (2022–2024) for Apple, Microsoft, and Tesla.
 * Task 2 develops a rule-based chatbot to answer financial queries based on that analysis.

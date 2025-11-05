@@ -20,27 +20,27 @@ Step 1 – Load & inspect data
    df.info()
 ```
 
-Step 2 – Data cleaning
+### Step 2 – Data cleaning
   • Remove missing rows in Fiscal Year.
   • Convert revenue, income, assets, liabilities and cash-flow columns to float.
   • Sort by Company and Fiscal Year.
 
-Step 3 – Feature engineering
+### Step 3 – Feature engineering
    • Revenue Growth (%)          = pct_change() × 100
    • Net Income Growth (%)
    • Debt Ratio (%)              = Liabilities / Assets × 100
    • Cash-Flow-to-Revenue Ratio (%) = CFO / Revenue × 100
    • Assets-to-Liabilities Ratio = Assets / Liabilities
 
-Step 4 – Aggregations
+### Step 4 – Aggregations
   • Group by Company  → sum, mean, max of revenue & income
   • Group by Year     → total revenue & income across firms
 
- Step 5 – Visualization
+###  Step 5 – Visualization
   • Grouped bar chart: Total Revenue vs Year for each Company.
   • Libraries used: matplotlib and numpy.
 
- Step 6 – Conclusions
+###  Step 6 – Conclusions
   • Apple dominates revenue & profit but growth is flattening.
   • Microsoft shows consistent balanced performance.
   • Tesla shows fastest revenue growth but volatile profit.
